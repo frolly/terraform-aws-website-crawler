@@ -75,7 +75,8 @@ In your main.tf just add this lines :
 
 ```sh
 module "local_foo_module_resources" {
-    source = "github.com/frolly/crawl-website-from-sitemap-to-s3"
+    source  = "frolly/website-crawler/aws"
+    version = "1.0.0"
     tag_entity = "TOTO"
     tag_project = "Crawler"
     tag_environment = "dev"
